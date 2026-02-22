@@ -361,7 +361,7 @@
 1770820380 d:\cpp\game_lib\initsdl.h
 	"SDL.h"
 
-1771172388 source:d:\cpp\game_lib\untitled.cpp
+1771737966 source:d:\cpp\game_lib\untitled.cpp
 	"initSDL.h"
 	"control\userControl.h"
 	"control\keyList.h"
@@ -372,15 +372,13 @@
 	<SDL.h>
 	"convertToSDL.h"
 
-1770823664 d:\cpp\game_lib\control\keylist.h
+1771739344 d:\cpp\game_lib\control\keylist.h
 
-1771154624 d:\cpp\game_lib\control\usercontrol.h
+1771739815 d:\cpp\game_lib\control\usercontrol.h
 	<SDL.h>
-	<string>
 	"keyList.h"
-	"convertToSDL.h"
 
-1771154624 source:d:\cpp\game_lib\control\usercontrol.cpp
+1771739334 source:d:\cpp\game_lib\control\usercontrol.cpp
 	"userControl.h"
 
 1770823942 d:\cpp\game_lib\control\converttosdl.cpp
@@ -391,7 +389,7 @@
 	"control\userControl.h"
 	"control\convertToSDL.cpp"
 
-1770829441 d:\cpp\game_lib\control\converttosdl.h
+1771739397 d:\cpp\game_lib\control\converttosdl.h
 	<SDL.h>
 	"keyList.h"
 

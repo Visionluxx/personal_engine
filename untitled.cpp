@@ -10,6 +10,10 @@ int main(int argc, char* argv[]){
 
   UserControl ctr;
 
+  const Uint8* keyboard = SDL_GetKeyboardState(NULL);
+
+  int count = 0;
+
   while (!quit){
       while (SDL_PollEvent(&ctr.event)){
 
@@ -20,13 +24,13 @@ int main(int argc, char* argv[]){
                 break;
         }
 
-        if (ctr.keyDown (KEY_1)){
-          std::cout<<"hello";
+        //if (ctr.keyDown (KEY_A)){
+        if (ctr.keyDown(KEY_A)){
+          std::cout<<count;
+          count ++;
         }
       }
-
-
-
     }
+
     return 0;
 }
