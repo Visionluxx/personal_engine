@@ -1,5 +1,5 @@
 #include "initSDL.h"
-#include "SDL.h"
+#include <SDL.h>
 #include <iostream>
 #include <string>
 
@@ -22,23 +22,15 @@ bool Start::Init_display(const char* name, int w, int h){
   SDL_Init(SDL_INIT_EVERYTHING);
   SDL_Window * screen = SDL_CreateWindow(name, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, w, h, 0);
   SDL_Renderer* renderer = SDL_CreateRenderer(screen, -1, 0);
+  Uint64 last = SDL_GetPerformanceCounter();
   return screen != NULL and renderer != NULL;
 }
 
-/*void Start::loop(){
-  bool quit = false;
-  while (!quit)
-    {
-      SDL_WaitEvent(&event);
 
-
-        switch (event.type)
-        {
-            case SDL_QUIT:
-                quit = true;
-                break;
-        }
-
-    }
-}*/
-
+//tinh delta time
+float Start::deltaTime (Uint64* last){
+  Uint64 now = SDL_GetPerformanceCounter();
+  float deltaTime = (now - *last) / (float)SDL_GetPerformanceFrequency();
+  *last = now;
+  return deltaTime;
+}

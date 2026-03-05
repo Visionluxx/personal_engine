@@ -352,16 +352,16 @@
 	"begin_code.h"
 	"close_code.h"
 
-1770820431 source:d:\cpp\game_lib\initsdl.cpp
+1772678514 source:d:\cpp\game_lib\initsdl.cpp
 	"initSDL.h"
-	"SDL.h"
+	<SDL.h>
 	<iostream>
 	<string>
 
-1770820380 d:\cpp\game_lib\initsdl.h
-	"SDL.h"
+1772679167 d:\cpp\game_lib\initsdl.h
+	<SDL.h>
 
-1771737966 source:d:\cpp\game_lib\untitled.cpp
+1772678623 source:d:\cpp\game_lib\untitled.cpp
 	"initSDL.h"
 	"control\userControl.h"
 	"control\keyList.h"

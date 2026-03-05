@@ -9,12 +9,10 @@ int main(int argc, char* argv[]){
   st.Init_display("hello", 500, 500);
 
   UserControl ctr;
-
-  const Uint8* keyboard = SDL_GetKeyboardState(NULL);
-
   int count = 0;
 
   while (!quit){
+      float dt = st.deltaTime(&st.last);
       while (SDL_PollEvent(&ctr.event)){
 
         switch (ctr.event.type)
@@ -23,12 +21,12 @@ int main(int argc, char* argv[]){
                 quit = true;
                 break;
         }
+      }
 
-        //if (ctr.keyDown (KEY_A)){
-        if (ctr.keyDown(KEY_A)){
-          std::cout<<count;
-          count ++;
-        }
+      //if (ctr.keyDown (KEY_A)){
+      if (ctr.keyDown(KEY_0)){
+        std::cout<<count;
+        count ++;
       }
     }
 
